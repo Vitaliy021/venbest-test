@@ -1,5 +1,7 @@
 import io from 'socket.io-client';
 
+const DEFAULT_INTERVAL = 10000;
+
 const socket = io.connect('http://localhost:3000');
 
 const name = 'Name LastName';
@@ -17,4 +19,4 @@ const sendName = () => {
     console.log(`Message sent: ${name}`);
 }
 
-setInterval(sendName, 10000);
+setInterval(sendName, DEFAULT_INTERVAL);
