@@ -5,7 +5,7 @@ const clients = {};
 
 const ELAPSED_TIME = 60000;
 const DEFAULT_INTERVAL = 10000;
-const PORT = 3000;
+const PORT = 2222;
 
 const now = Date.now();
 

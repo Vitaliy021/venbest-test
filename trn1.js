@@ -1,8 +1,9 @@
 import io from 'socket.io-client';
 
 const DEFAULT_INTERVAL = 10000;
+const PORT = 2222;
 
-const socket = io.connect('http://localhost:3000');
+const socket = io.connect(`http://localhost:${PORT}`);
 
 const name = 'Name LastName';
 
